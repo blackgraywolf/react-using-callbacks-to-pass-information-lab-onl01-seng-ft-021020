@@ -29,9 +29,9 @@ export default class Matrix extends Component {
   render() {
     return (
       <div id="app">
-        <ColorSelector />
+               <ColorSelector setSelectedColor={this.setSelectedColor} />
         <div id="matrix">
-                 <ColorSelector setSelectedColor={this.setSelectedColor} />
+          {this.genMatrix()}
         </div>
       </div>
     )
